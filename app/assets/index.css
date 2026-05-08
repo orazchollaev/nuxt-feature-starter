@@ -10,22 +10,28 @@
 
 :root,
 .dark {
-  --bg: #1a1a2e;
-  --bg-surface: #16213e;
-  --bg-card: #0f3460;
-  --border: #e94560;
-  --border-hover: #ff6b9d;
-  --text: #f1f1f1;
-  --text-sub: #e2e8f0;
-  --text-muted: #a8b2d8;
-  --text-dim: #6b7aa1;
-  --accent: #00dc82;
-  --accent2: #e94560;
-  --accent-text: #0f0f0f;
-  --ink: #f1f1f1;
-  --yellow: #ffd700;
-  --panel-bg: #16213e;
-  --panel-border: #e94560;
+  --bg: #1f1b18;
+  --bg-surface: #2a241f;
+  --bg-card: #332b24;
+
+  --border: #f4d4a4;
+  --border-hover: #ffd166;
+
+  --text: #fdf6e3;
+  --text-sub: #f3e9d2;
+  --text-muted: #c9b79c;
+  --text-dim: #8b7355;
+
+  --accent: #ffb703;
+  --accent2: #ff6b6b;
+  --accent-text: #1f1b18;
+
+  --ink: #fff8e7;
+  --yellow: #ffd166;
+
+  --panel-bg: #2a241f;
+  --panel-border: #f4d4a4;
+
   --font-bang: "Bangers", "Impact", cursive;
   --font-body: "Comic Neue", "Comic Sans MS", cursive;
 }

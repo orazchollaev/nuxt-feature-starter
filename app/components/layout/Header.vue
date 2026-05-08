@@ -69,16 +69,14 @@ const toggleColorMode = () => {
   font-size: 1.6rem;
   letter-spacing: 2px;
   color: var(--accent);
-  text-shadow: 3px 3px 0 var(--ink);
+  text-shadow: 2px 2px 0 var(--ink);
   text-decoration: none;
   transition: all 0.1s;
 }
 
 .logo-text:hover {
   color: var(--accent2);
-  text-shadow:
-    3px 3px 0 var(--ink),
-    -1px -1px 0 var(--ink);
+  text-shadow: 2px 2px 0 var(--ink);
 }
 
 .nav-area {
