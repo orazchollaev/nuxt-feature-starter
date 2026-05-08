@@ -22,12 +22,12 @@ const filters: TodoFilterItem[] = [
 const addTodo = (title: string) => store.addTodo(title)
 const toggleTodo = (id: string) => store.toggleTodo(id)
 const deleteTodo = (id: string) => store.deleteTodo(id)
-const setFilter = (newFilter: TodoFilterType) => store.setFilter(newFilter)
+const setFilter = (f: TodoFilterType) => store.setFilter(f)
 </script>
 
 <template>
   <div class="todo-page">
-    <div class="header">
+    <div class="page-header">
       <h1>{{ $t("todo.appName") }}</h1>
       <div class="filters">
         <button
@@ -47,7 +47,10 @@ const setFilter = (newFilter: TodoFilterType) => store.setFilter(newFilter)
 
     <div v-if="todos.length > 0" class="stats">
       <p>
-        {{ activeCount }} {{ $t("todo.active") }} · {{ completedCount }}
+        <span class="stat-num">{{ activeCount }}</span>
+        {{ $t("todo.active") }}
+        &nbsp;·&nbsp;
+        <span class="stat-num">{{ completedCount }}</span>
         {{ $t("todo.completed") }}
       </p>
     </div>
@@ -56,23 +59,28 @@ const setFilter = (newFilter: TodoFilterType) => store.setFilter(newFilter)
 
 <style scoped>
 .todo-page {
-  max-width: 900px;
+  max-width: 760px;
   margin: 0 auto;
   padding: 2rem;
 }
 
-.header {
+.page-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.75rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 h1 {
-  font-size: 2rem;
-  font-weight: 700;
+  font-family: var(--font-bang);
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: var(--accent);
+  text-shadow: 3px 3px 0 var(--ink);
   margin: 0;
-  color: var(--text-sub);
 }
 
 .filters {
@@ -81,18 +89,23 @@ h1 {
 }
 
 .filter-btn {
-  padding: 0.4rem 1rem;
+  font-family: var(--font-bang);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  padding: 5px 14px;
   background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 6px;
+  border: 3px solid var(--ink);
+  border-radius: 3px;
   cursor: pointer;
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: var(--text-muted);
-  font-size: 0.875rem;
-  transition: all 0.2s;
+  box-shadow: 3px 3px 0 var(--ink);
+  transition: all 0.1s;
 }
 
 .filter-btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 var(--ink);
   border-color: var(--accent);
   color: var(--text-sub);
 }
@@ -100,18 +113,32 @@ h1 {
 .filter-btn.active {
   background: var(--accent);
   color: var(--accent-text);
-  border-color: var(--accent);
-  font-weight: 600;
+  border-color: var(--ink);
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 var(--ink);
+}
+
+.filter-btn:active {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0 var(--ink);
 }
 
 .stats {
-  margin-top: 1.5rem;
-  padding: 0.875rem 1rem;
+  margin-top: 1.25rem;
+  padding: 0.75rem 1rem;
   background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 8px;
+  border: 3px solid var(--ink);
+  border-radius: 4px;
   text-align: center;
   color: var(--text-dim);
-  font-size: 0.875rem;
+  font-family: var(--font-bang);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  box-shadow: 4px 4px 0 var(--ink);
+}
+
+.stat-num {
+  color: var(--accent);
+  font-size: 1.2rem;
 }
 </style>

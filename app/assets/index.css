@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -8,38 +10,53 @@
 
 :root,
 .dark {
-  --bg: #0f0f0f;
-  --bg-surface: #111111;
-  --bg-card: #151515;
-  --border: #2a2a2a;
-  --border-hover: #3a3a3a;
+  --bg: #1a1a2e;
+  --bg-surface: #16213e;
+  --bg-card: #0f3460;
+  --border: #e94560;
+  --border-hover: #ff6b9d;
   --text: #f1f1f1;
   --text-sub: #e2e8f0;
-  --text-muted: #6b7280;
-  --text-dim: #4b5563;
+  --text-muted: #a8b2d8;
+  --text-dim: #6b7aa1;
   --accent: #00dc82;
+  --accent2: #e94560;
   --accent-text: #0f0f0f;
+  --ink: #f1f1f1;
+  --yellow: #ffd700;
+  --panel-bg: #16213e;
+  --panel-border: #e94560;
+  --font-bang: "Bangers", "Impact", cursive;
+  --font-body: "Comic Neue", "Comic Sans MS", cursive;
 }
 
 .light {
-  --bg: #f8f8f8;
+  --bg: #fffef0;
   --bg-surface: #ffffff;
-  --bg-card: #f3f4f6;
-  --border: #e5e7eb;
-  --border-hover: #d1d5db;
-  --text: #111111;
+  --bg-card: #fff9e6;
+  --border: #1a1a2e;
+  --border-hover: #e94560;
+  --text: #1a1a2e;
   --text-sub: #1f2937;
-  --text-muted: #6b7280;
-  --text-dim: #9ca3af;
+  --text-muted: #4b5563;
+  --text-dim: #6b7280;
   --accent: #059669;
+  --accent2: #e94560;
   --accent-text: #ffffff;
+  --ink: #1a1a2e;
+  --yellow: #ffd700;
+  --panel-bg: #fffef0;
+  --panel-border: #1a1a2e;
+  --font-bang: "Bangers", "Impact", cursive;
+  --font-body: "Comic Neue", "Comic Sans MS", cursive;
 }
 
 body {
-  font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-family: var(--font-body);
   color: var(--text);
   background: var(--bg);
+  background-image: radial-gradient(circle, var(--text-dim) 1px, transparent 1px);
+  background-size: 28px 28px;
   transition:
     background 0.2s ease,
     color 0.2s ease;

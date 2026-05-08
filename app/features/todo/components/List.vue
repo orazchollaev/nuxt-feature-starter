@@ -4,7 +4,6 @@ import type { Todo } from "../types/todo.type"
 interface Props {
   todos: Todo[]
 }
-
 interface Emits {
   (e: "toggle" | "delete", id: string): void
 }
@@ -30,6 +29,6 @@ defineEmits<Emits>()
 .todo-list {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.6rem;
 }
 </style>
