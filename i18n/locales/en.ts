@@ -68,4 +68,17 @@ export default defineI18nLocale(() => ({
       architecture: "Feature-Based Architecture",
     },
   },
+
+  error: {
+    notFound: "Page Not Found",
+    notFoundDesc:
+      "Sorry, the page you're looking for doesn't exist. It might have been moved or deleted.",
+    error: "Something Went Wrong",
+    errorDesc:
+      "An unexpected error occurred while rendering this page. Try again, or head back home.",
+    backHome: "Back to Home",
+    goBack: "Go Back",
+    contactSupport: "Contact support",
+    needHelp: "Need help?",
+  },
 }))
