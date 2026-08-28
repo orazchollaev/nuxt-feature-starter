@@ -75,8 +75,9 @@ defineEmits<Emits>()
   border: 2px solid var(--border);
   border-radius: 3px;
   cursor: pointer;
-  font-family: var(--font-bang);
-  font-size: 0.85rem;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.8rem;
   letter-spacing: 0.5px;
   box-shadow: 2px 2px 0 var(--ink);
   transition: all 0.1s;

@@ -6,7 +6,6 @@ const props = defineProps<{ error: NuxtError }>()
 const { t } = useI18n()
 const router = useRouter()
 
-// eslint-disable-next-line @typescript-eslint/no-deprecated
 const statusCode = computed(() => props.error?.status ?? props.error?.statusCode ?? 500)
 const isNotFound = computed(() => statusCode.value === 404)
 
@@ -121,9 +120,10 @@ watchEffect(() => {
 
 .badge {
   display: inline-block;
-  font-family: var(--font-bang);
-  font-size: 13px;
-  letter-spacing: 2px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   padding: 3px 14px;
   border: 3px solid var(--accent);
@@ -143,7 +143,7 @@ watchEffect(() => {
   font-family: var(--font-bang);
   font-size: clamp(5rem, 22vw, 9rem);
   line-height: 1;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   color: var(--accent);
   text-shadow:
     4px 4px 0 var(--accent2),
@@ -186,7 +186,7 @@ watchEffect(() => {
   font-family: var(--font-bang);
   font-size: clamp(1.5rem, 5vw, 2.25rem);
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1.2;
   margin: 1rem 0 0.75rem;
   color: var(--text);
@@ -231,9 +231,10 @@ watchEffect(() => {
 }
 
 .btn {
-  font-family: var(--font-bang);
-  font-size: 1.15rem;
-  letter-spacing: 1px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
   border: 3px solid var(--ink);
   border-radius: 3px;
@@ -281,9 +282,9 @@ watchEffect(() => {
   border-radius: 12px;
   padding: 0.6rem 1.5rem;
   box-shadow: 4px 4px 0 var(--ink);
-  font-family: var(--font-bang);
-  font-size: 1rem;
-  letter-spacing: 0.5px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.9rem;
   color: var(--text-sub);
   position: relative;
 }

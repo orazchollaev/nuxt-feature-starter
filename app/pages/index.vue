@@ -162,9 +162,10 @@ watchEffect(() => {
 
 .badge {
   display: inline-block;
-  font-family: var(--font-bang);
-  font-size: 13px;
-  letter-spacing: 2px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   padding: 3px 14px;
   border: 3px solid var(--accent);
@@ -180,10 +181,10 @@ h1 {
   font-size: clamp(2rem, 6vw, 3.5rem);
   font-weight: 400;
   line-height: 1.1;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   margin-bottom: 0.875rem;
   color: var(--accent);
-  text-shadow: 3px 3px 0 var(--ink);
+  text-shadow: 2px 2px 0 var(--ink);
 }
 
 .subtitle {
@@ -230,9 +231,10 @@ h1 {
 
 /* ── Section labels ── */
 .panel-label {
-  font-family: var(--font-bang);
-  font-size: 13px;
-  letter-spacing: 2px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--accent);
   border-left: 4px solid var(--accent);
@@ -307,9 +309,9 @@ h1 {
 }
 
 .f-title {
-  font-family: var(--font-bang);
-  font-size: 16px;
-  letter-spacing: 0.5px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 15px;
   color: var(--text-sub);
   margin-bottom: 4px;
 }
@@ -323,9 +325,10 @@ h1 {
 
 /* ── Usage ── */
 .usage-label {
-  font-family: var(--font-bang);
-  font-size: 13px;
-  letter-spacing: 1px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.5px;
   color: var(--text-dim);
   margin: 1.1rem 0 0.3rem;
   text-transform: uppercase;
@@ -377,9 +380,6 @@ h1 {
   .cmd-block {
     width: 100%;
     justify-content: center;
-  }
-  h1 {
-    text-shadow: 2px 2px 0 var(--ink);
   }
   .action-burst {
     display: none;

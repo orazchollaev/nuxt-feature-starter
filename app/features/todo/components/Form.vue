@@ -61,9 +61,10 @@ const handleSubmit = () => {
   color: var(--accent-text);
   border: 3px solid var(--ink);
   border-radius: 4px;
-  font-family: var(--font-bang);
-  font-size: 1.1rem;
-  letter-spacing: 1px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
   cursor: pointer;
   box-shadow: 4px 4px 0 var(--ink);
   transition: all 0.1s;

@@ -67,7 +67,7 @@ const toggleColorMode = () => {
 .logo-text {
   font-family: var(--font-bang);
   font-size: 1.6rem;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: var(--accent);
   text-shadow: 2px 2px 0 var(--ink);
   text-decoration: none;
@@ -86,9 +86,10 @@ const toggleColorMode = () => {
 }
 
 .nav-link {
-  font-family: var(--font-bang);
-  font-size: 1.15rem;
-  letter-spacing: 1px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
   color: var(--ink);
   text-decoration: none;
   border: 3px solid var(--ink);
@@ -118,9 +119,10 @@ const toggleColorMode = () => {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-bang);
-  font-size: 0.95rem;
-  letter-spacing: 1px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
   border: 3px solid var(--ink);
   padding: 4px 14px;
   background: var(--bg-card);

@@ -34,9 +34,9 @@
   padding: 0.6rem 1.5rem;
   box-shadow: 4px 4px 0 var(--ink);
   position: relative;
-  font-family: var(--font-bang);
-  font-size: 1.1rem;
-  letter-spacing: 0.5px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.95rem;
   color: var(--text-sub);
 }
 

@@ -20,9 +20,9 @@
   padding: 1.5rem 2.5rem;
   text-align: center;
   color: var(--text-dim);
-  font-family: var(--font-bang);
-  font-size: 1.15rem;
-  letter-spacing: 1px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1rem;
   box-shadow: 4px 4px 0 var(--ink);
   position: relative;
 }

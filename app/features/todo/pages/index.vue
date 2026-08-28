@@ -77,9 +77,9 @@ h1 {
   font-family: var(--font-bang);
   font-size: 2.4rem;
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: var(--accent);
-  text-shadow: 3px 3px 0 var(--ink);
+  text-shadow: 2px 2px 0 var(--ink);
   margin: 0;
 }
 
@@ -89,9 +89,10 @@ h1 {
 }
 
 .filter-btn {
-  font-family: var(--font-bang);
-  font-size: 1rem;
-  letter-spacing: 1px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
   padding: 5px 14px;
   background: var(--bg-card);
   border: 3px solid var(--ink);
@@ -131,9 +132,9 @@ h1 {
   border-radius: 4px;
   text-align: center;
   color: var(--text-dim);
-  font-family: var(--font-bang);
-  font-size: 1rem;
-  letter-spacing: 1px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.9rem;
   box-shadow: 4px 4px 0 var(--ink);
 }
 
