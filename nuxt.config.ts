@@ -34,9 +34,17 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@nuxt/eslint",
     "@nuxtjs/color-mode",
+    "@nuxt/icon",
     "@pinia/nuxt",
     "@vercel/analytics",
   ],
+
+  icon: {
+    // Bundled locally via @iconify-json/ph — no runtime calls to the Iconify API.
+    serverBundle: {
+      collections: ["ph"],
+    },
+  },
 
   i18n: {
     defaultLocale: "en",

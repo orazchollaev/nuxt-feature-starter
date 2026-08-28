@@ -33,8 +33,8 @@ const toggleColorMode = () => {
             :title="colorMode.value === 'dark' ? 'Light mode' : 'Dark mode'"
             @click="toggleColorMode"
           >
-            <IconDarkMode v-if="colorMode.value === 'dark'" />
-            <IconLightMode v-else />
+            <Icon v-if="colorMode.value === 'dark'" name="ph:moon-bold" size="16" />
+            <Icon v-else name="ph:sun-bold" size="16" />
           </button>
           <button class="toggle-btn" @click="toggleLocale">
             {{ locale.toUpperCase() }}
