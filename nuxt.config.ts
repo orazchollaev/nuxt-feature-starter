@@ -56,7 +56,7 @@ export default defineNuxtConfig({
       fallbackLocale: "en",
     },
 
-    vueI18n: "./i18n/i18n.config.ts",
+    vueI18n: "i18n.config.ts",
   },
 
   css: ["~/assets/index.css"],
