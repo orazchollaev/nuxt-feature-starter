@@ -61,8 +61,6 @@ body {
   font-family: var(--font-body);
   color: var(--text);
   background: var(--bg);
-  background-image: radial-gradient(circle, var(--text-dim) 1px, transparent 1px);
-  background-size: 28px 28px;
   transition:
     background 0.2s ease,
     color 0.2s ease;
@@ -74,4 +72,3 @@ main {
   padding: 2rem;
   min-height: calc(100vh - 200px);
 }
-
