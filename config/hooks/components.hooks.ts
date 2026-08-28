@@ -172,11 +172,19 @@ export function setupFeatureComponents(nuxt: Nuxt): void {
       // Check for duplicate pascal names to warn early
       const existing = components.find((c) => c.pascalName === fc.pascalName)
       if (existing) {
-        console.warn(
+        const message =
           `[feature-components] Duplicate component name "${fc.pascalName}" detected.\n` +
-            `  Existing: ${existing.filePath}\n` +
-            `  Skipping: ${fc.filePath}`
-        )
+          `  Existing: ${existing.filePath}\n` +
+          `  Skipping: ${fc.filePath}`
+
+        // Dev: warn and keep going so HMR isn't interrupted by a typo.
+        // Build/CI: fail hard — a silently skipped component is a prod bug.
+        if (nuxt.options.dev) {
+          console.warn(message)
+        } else {
+          throw new Error(message)
+        }
+
         continue
       }
 
