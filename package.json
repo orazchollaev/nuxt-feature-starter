@@ -23,31 +23,31 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@nuxt/icon": "^1.10.3",
+    "@nuxt/icon": "^1.15.0",
     "@nuxtjs/color-mode": "^4.0.1",
     "@nuxtjs/i18n": "^10.6.0",
     "@pinia/nuxt": "^1.0.2",
     "@vercel/analytics": "^2.0.1",
-    "nuxt": "^4.5.2",
+    "nuxt": "^4.6.0",
     "pinia": "^4.0.3",
-    "vue": "^3.5.41",
-    "vue-router": "^5.2.0",
+    "vue": "^3.5.43",
+    "vue-router": "^5.3.1",
     "vue-shortcut-manager": "^1.0.8"
   },
   "devDependencies": {
-    "@commitlint/cli": "^21.2.2",
-    "@commitlint/config-conventional": "^21.2.2",
+    "@commitlint/cli": "^21.2.3",
+    "@commitlint/config-conventional": "^21.2.3",
     "@iconify-json/ph": "^1.2.2",
     "@nuxt/eslint": "^1.17.0",
-    "@types/node": "^26.4.0",
-    "eslint": "^10.9.1",
+    "@types/node": "^26.6.4",
+    "eslint": "^10.12.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.6",
     "husky": "^9.1.7",
-    "lint-staged": "^17.3.0",
-    "prettier": "^3.9.6",
-    "typescript": "^6.0.2",
-    "vue-tsc": "^3.3.11"
+    "lint-staged": "^17.6.0",
+    "prettier": "^3.9.9",
+    "typescript": "^6.0.3",
+    "vue-tsc": "^3.3.12"
   },
   "lint-staged": {
     "*.{js,ts,vue}": [
