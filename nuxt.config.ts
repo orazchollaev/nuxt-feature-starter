@@ -83,6 +83,7 @@ export default defineNuxtConfig({
   vite: {
     optimizeDeps: {
       include: ["vue-shortcut-manager"],
+      noDiscovery: true,
     },
   },
 
@@ -90,5 +91,11 @@ export default defineNuxtConfig({
     classSuffix: "",
     preference: "dark",
     fallback: "dark",
+  },
+
+  nitro: {
+    externals: {
+      inline: [/[\\/]node_modules[\\/]nuxt[\\/]dist[\\/]/],
+    },
   },
 })
